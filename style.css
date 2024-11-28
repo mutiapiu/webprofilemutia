@@ -1,0 +1,297 @@
+body, html {
+    overflow-x: hidden;
+    font-family: 'Karla', sans-serif;
+}
+
+body.dark-mode {
+    background-color: #212529;
+}
+  
+body.dark-mode .navbar {
+    background-color: #343a40; /* Navbar gelap */
+    color: #f8f9fa;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgb(233, 198, 198);
+}
+
+.navbar-brand {
+    color: rgb(153, 100, 56);
+}
+
+.navbar-brand:hover {
+    color: rgb(97, 58, 26);
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: rgb(153, 100, 56);
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color:rgb(94, 50, 50);
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::before {
+    content: '';
+    transition: 0.5s ease-in-out;
+    height: 3px;
+    width: 0;
+    background-color: rgb(97, 58, 26);
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    left: 0;
+    visibility: hidden;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+    visibility: visible;
+}
+
+.form-check-input {
+    width: 2.5rem;
+    height: 1.5rem;
+    background-color: #ddd;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.form-check-input:checked {
+    background-color: #333; /* Warna saat dark mode aktif */
+    border-color: #444;
+}
+  
+
+/* Profile Section */
+.profile-section {
+    background-color: rgb(168, 117, 101);
+}
+
+.profile-text {
+    height: 60vh;
+    color: beige;
+    padding: 150px 115px;
+}
+
+.profile-button {
+    background-color: bisque;
+    color: rgb(73, 38, 9);
+    border: none;
+    margin-top: 15px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.profile-button:hover {
+    background-color: rgba(211, 165, 112, 0.911);
+}
+
+.profile-image {
+    padding: 0 0;
+}
+
+.profile-image .img-fluid {
+    margin-left: 225px;
+}
+
+/* About Section */
+.about-section {
+    background-color: rgb(233, 198, 198);
+    padding: 20px 0;
+}
+
+.about-image {
+    margin-top: 45px;
+    margin-left: 70px;
+    width: 400px;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+.img-about.img-fluid {
+    margin-left: 40px;
+    border-radius: 50%;
+}
+
+.about-text {
+    width: 770px;
+    height: 440px;
+    color: rgb(97, 58, 26);
+    padding: 55px 80px;
+    text-align: justify;
+    padding-right: 0;
+}
+
+/* Skills Section */
+.skills-section {
+    background-color: rgb(168, 117, 101);
+    padding: 60px 0;
+}
+
+.container .skills-heading {
+    color: rgb(233, 198, 198);
+}
+
+.container .skills-subheading {
+    color: rgb(233, 198, 198);
+    margin-bottom: 20px;
+}
+
+.skills-card {
+    text-align: center;
+    background-color: rgb(233, 198, 198);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s;
+}
+
+.skills-card:hover {
+    transform: translateY(-15px);
+}
+
+.skills-icon {
+    font-size: 40px;
+    color: rgb(168, 117, 101);
+    margin-bottom: 20px;
+}
+
+.skills-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: rgb(97, 58, 26);
+}
+
+.skills-description {
+    color: rgb(97, 58, 26);
+    font-size: 14px;
+}
+
+/* Gallery Section */
+.gallery-section {
+    background-color: rgb(233, 198, 198);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.container .gallery-heading {
+    color: rgb(168, 117, 101);
+}
+
+.container .gallery-subheading {
+    color: rgb(168, 117, 101);
+    margin-bottom: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border: 6px solid rgb(168, 117, 101);
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    background: rgb(233, 198, 198, 0.8);
+    color: rgb(97, 58, 26);
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: rgb(168, 117, 101);
+    padding: 30px 0;
+}
+
+.container .contact-heading {
+    color: rgb(233, 198, 198);
+}
+
+.container .contact-subheading {
+    color: rgb(233, 198, 198);
+}
+
+.form-label {
+    color: rgb(233, 198, 198);
+}
+
+.btn {
+    color: rgb(97, 58, 26);
+    background-color: rgb(233, 198, 198);
+}
+
+.btn:hover {
+    background-color: rgb(212, 167, 167);
+}
+
+/* Footer */
+.footer {
+    background-color: rgb(233, 198, 198);
+    color: rgb(97, 58, 26);
+    padding: 10px 160px; 
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-links a {
+    font-size: 20px;
+    color: rgb(97, 58, 26);
+}
+
+.footer-links a:hover {
+    color: rgb(189, 149, 149);
+}
